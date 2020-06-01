@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTextIcons">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="296dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="100dp"
+            app:srcCompat="@mipmap/logotipo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:scrollHorizontally="false"
+            android:text="@string/home_textview_bienvenido"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonHomeAlternativas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+
+
+            android:layout_marginRight="40dp"
+            android:background="@color/colorPrimary"
+            android:onClick="buttonAlternativas_Click"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:text="@string/home_button_alternativas"
+            android:textColor="@color/colorTextIcons" />
+
+        <Button
+            android:id="@+id/buttonHomeSorprendeme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonHomeAlternativas"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/colorPrimary"
+            android:onClick="buttonSorprendeme_Click"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:text="@string/home_button_sorprendeme"
+            android:textColor="@color/colorTextIcons" />
+
+        <TextView
+            android:id="@+id/textViewHomeCerrarSesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonHomeSorprendeme"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:onClick="textViewHomeCerrarSesion_Click"
+            android:text="@string/home_textview_cerrar_sesion" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

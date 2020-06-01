@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Eat Just In Time</string>
+
+    <string name="main_email_placeholder">Correo electrónico</string>
+    <string name="main_password_placeholder">Contraseña</string>
+    <string name="main_button_ingresar">Ingresar</string>
+    <string name="main_link_registro">¿No tienes una cuenta? Regístrate</string>
+
+    <string name="registro_email_placeholder">Correo electrónico</string>
+    <string name="registro_password_placeholder">Contraseña</string>
+    <string name="registro_password_verif_placeholder">Repite contraseña</string>
+    <string name="registro_button_registro">Registrar</string>
+    <string name="registro_link_ingresar">¿Ya tienes una cuenta? Ingresa</string>
+
+    <string name="home_button_alternativas">Buscar opciones cercanas</string>
+    <string name="home_button_sorprendeme">Sorpréndeme!</string>
+    <string name="home_textview_bienvenido">¡Bienvenido!</string>
+    <string name="home_textview_cerrar_sesion">Cerrar sesión</string>
+
+    <string name="restaurantes_nombre">Nombre restaurante</string>
+    <string name="restaurantes_direccion">Dirección</string>
+    <string name="restaurantes_direccion_default">Av. López Mateos</string>
+    <string name="restaurantes_boton_atras">Atrás</string>
+
+    <string name="mapa_boton_aleatorio">Random</string>
+    <string name="mapa_boton_vegano">Opción vegana</string>
+
+
+    <string name="google_maps_key">AIzaSyBUlmfuIAnViiAqnUCKyTf605BZj76MylA</string>
+    <string name="title_activity_maps_pruebas">Map</string>
+</resources>

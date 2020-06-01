@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTextIcons">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/logotipo" />
+
+        <EditText
+            android:id="@+id/editTextRegistroEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="40dp"
+            android:ems="10"
+            android:hint="@string/registro_email_placeholder"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextRegistroPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextRegistroEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:ems="10"
+            android:hint="@string/registro_password_placeholder"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/editTextRegistroPasswordVerif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextRegistroPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:ems="10"
+            android:hint="@string/registro_password_verif_placeholder"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/buttonRegistroRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextRegistroPasswordVerif"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/colorPrimary"
+            android:onClick="buttonRegistro_Click"
+
+            android:shadowColor="@color/colorPrimaryDark"
+            android:text="@string/registro_button_registro"
+            android:textColor="@color/colorTextIcons" />
+
+        <TextView
+            android:id="@+id/textViewRegistroIngresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonRegistroRegistrar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:onClick="textViewLinkIngresar_Click"
+            android:text="@string/registro_link_ingresar" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
